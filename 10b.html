@@ -1,0 +1,14 @@
+<html>
+<body>
+<p>Access a JavaScript  object:</p>
+<p id="demo"></p>
+<script>
+var data,jstr,jdata;
+data={name:"ABC",age:30,city:"Mumbai"};
+
+//covert Json to sting
+jstr=JSON.stringify(data);
+//covert string to json
+jdata=JSON.parse(jstr);
+document.getElementById("demo").innerHTML=jdata.name;;
+</script>  </body> </html>

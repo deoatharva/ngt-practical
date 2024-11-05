@@ -1,0 +1,27 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="WebApplication1.WebForm2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("p").hide(2000, function () {
+                    alert("The paragraph is hidden");
+                });
+            });
+        });
+        </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <p>Next Generation Technology</p>
+        <input type="button" id="btn1" value="callback" />
+    </div>
+    </form>
+</body>
+</html>

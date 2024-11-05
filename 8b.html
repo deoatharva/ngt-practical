@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("img").hide();
+  });
+  $("#show").click(function(){
+    $("img").show();
+  });
+});
+</script>
+</head>
+<body>
+
+<img src="pikachu.jpg" height=100>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+</body>
+</html>

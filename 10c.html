@@ -1,0 +1,12 @@
+<html>
+<body>
+<p>Access a JavaScript  object:</p>
+<p id="demo"></p>
+<script>
+var data,,jstr;
+data={name:"ABC", age:20,city:"Mumbai"};
+jstr=JSON.stringify(data);
+document.cookie ="data ="+jstr +";expires=Sun,15 Sep 2019 22:47:00 UTC;path=/";
+
+document.getElementByID("demo").innerHTML=document.cookie;
+</script> </body> </html>

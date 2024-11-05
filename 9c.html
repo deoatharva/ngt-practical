@@ -1,0 +1,53 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm3.aspx.cs" Inherits="WebApplication1.WebForm3" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btnappend").click(function ()
+            {
+                $("p").append("Append Text");
+            });
+
+            $("#btnprepend").click(function () {
+                $("p").prepend("Prepend Text");
+            });
+
+            $("#btnbefore").click(function () {
+                $("p").before("Before Text");
+            });
+
+            $("#btnafter").click(function () {
+                $("p").after("After Text");
+            });
+            $("#btnremove").click(function () {
+                $("#d1").remove();
+            });
+
+            $("#btnempty").click(function () {
+                $("#d1").empty();
+            });
+            
+            });
+        </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+ <div id="d1" style="border-style: dotted; background-color: #6699FF; height:300px; width:300px" >
+       <p>Welcome to visual Studio</p>
+   </div>
+        <div>
+        <input type="button" id="btnappend" value="Append" />
+        <input type="button" id="btnprepend" value="Prepend" />
+        <input type="button" id="btnbefore" value="Before" />
+         <input type="button" id="btnafter" value="After" />
+        <input type="button" id="btnremove" value="Remove" />
+        <input type="button" id="btnempty" value="Empty" />
+    </div>
+    </form>
+</body>
+</html>

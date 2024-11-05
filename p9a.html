@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({left: '500px'}).slideDown("slow").slideUp("slow");
+  });
+});
+</script> 
+</head>
+<body>
+
+<button>Start Animation</button>
+
+<div style="position:absolute;">
+<img id="img3" src="y.jpg" width="300">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="PRACT.WebForm1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("*").css({ "background-color": "red" });
+            $("P").css({"font-size": 25,"font-weight": "bold"," font-style":  
+                       "italic","text-align": "center"});
+            $("#test").css({"color":"blue","text-align":"right"});
+        });
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <p>Department of Information Technology</p>
+    <p id="test">jQuery is a library of JavaScript </p>
+    </div>
+    </form>
+</body>
+</html>

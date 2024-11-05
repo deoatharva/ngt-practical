@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#div1").slideDown("slow");
+  });
+  $("#btn2").click(function(){
+    $("#div1").slideUp("slow");
+  });
+$("#btn3").click(function(){
+    $("#div1").slideToggle("slow");
+  });
+});
+</script>
+</head>
+<body>
+<p>Practical done by atharva</p>
+<button id="btn1">Slide Down</button>
+<button id="btn2">Slide Up</button>
+<button id="btn3">Slide Toggle</button>
+<div id="div1" style="display:none;"><img id="img3" src="x.jpg" width="300"></div>
+</body>
+</html>

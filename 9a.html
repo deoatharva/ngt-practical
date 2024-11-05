@@ -1,0 +1,37 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="WebApplication1.WebForm1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("h1").css({ color: "red" }).hide(2000).slideDown(4000);
+            });
+            $("#btn2").click(function () {
+                $("div").animate({
+                    
+                    width: '250px',
+                    height: '200px',
+                    opacity:'0.5'
+                });
+            });
+        }
+        );
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="div1" style="border:dotted;background-color:sandybrown">
+        <h1>jQuery is lightweighted library of javaScript</h1>
+     
+            <input type="button" id="btn1" value="chaining" />
+            <input type="button" id="btn2" value="animate" />
+    </div>
+    </form>
+</body>
+</html>
+x

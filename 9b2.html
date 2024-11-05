@@ -1,0 +1,59 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="WebApplication1.WebForm2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+        
+        $("#btngettext").click(function () {   
+            alert("TEXT:-"+$("h1").text());
+        });
+        
+
+        $("#btngethtml").click(function () {   
+            alert("HTML:-" + $("p").html());
+        });
+
+        $("#btngetval").click(function () {
+            alert("VAL:-" + $("#t1").val());
+        });
+        $("#btnsettext").click(function () {   
+            $("h1").text("CAPTAIN AMERICA")
+        });
+        
+
+        $("#btnsethtml").click(function () {   
+$("p").html("<b>THOR ODINSON</b>");      
+  });
+
+        $("#btnsetval").click(function () {
+            $("#t1").val("TONY STARK");
+        });
+
+        });
+        </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+             <h1>jQuery <i>JavaScript</i> library</h1>
+    <p>Next <b>Generation </b>Technology</p>
+   
+        <input type="text" id="t1" value="jQuery" />
+       
+        <input type="button" id="btn1" value="CallBack" />
+
+        <input type="button" id="btngettext" value="GetText" />
+        <input type="button" id="btngethtml" value="GetHTML" />
+        <input type="button" id="btngetval" value="GetVal" />
+        
+         <input type="button" id="btnsettext" value="SetText" />
+        <input type="button" id="btnsethtml" value="SetHTML" />
+        <input type="button" id="btnsetval" value="SetVal" />
+    </div>
+    </form>
+</body>
+</html>

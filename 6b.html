@@ -1,0 +1,17 @@
+<?php
+require 'vendor/autoload.php';
+echo extension_loaded("mongodb")? "loaded\n": "not loaded\n";
+$m = new MongoDB\Client("mongodb://localhost:27017"); echo "connected";
+// select a database
+$db = $m->mydb1;
+echo "Database mydb1 selcted";
+$collection = $db->mycol;
+echo"Collection selected successfully";
+$cursor=$collection->find();
+foreach($cursor as $document)
+{
+echo $document["name"];
+echo $document["Age"];
+}
+echo"Document Retrieve Successfully";
+?>
